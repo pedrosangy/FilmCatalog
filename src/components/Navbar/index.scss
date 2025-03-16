@@ -2,7 +2,14 @@
     background-color: #0f172a;
     padding: 12px 3%;
 
-    .page-title{
+    .page-title {
+      color: #fff;
+      transition: color 0.3s; /* Added transition for hover effect */
+    }
+
+    .page-title:hover {
+      color: #f0a500; /* Added hover effect color */
+
         color: #fff;
     }
 }

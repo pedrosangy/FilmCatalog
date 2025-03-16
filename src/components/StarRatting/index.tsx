@@ -1,5 +1,6 @@
 import { IoIosStarOutline } from "react-icons/io";
 import { IoIosStar } from "react-icons/io";
+import "./index.scss";
 
 export interface Props {
   rating: number;
@@ -20,7 +21,7 @@ export default function StarRatting(props: Props) {
   }
 
   return (
-    <div>
+    <div className="movie-rate">
       {fullStars.map(i =>
         <IoIosStar key={i} />
       )}
