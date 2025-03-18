@@ -19,8 +19,8 @@ To run this project locally, follow these steps:
 
 ## Technologies Used
 
-- **Frontend**: React.js, HTML5, CSS3
-- **Backend**: Node.js, Express.js
+- **Frontend**: React.js, HTML5, CSS3, Next.js
+- **Backend**: Node.js, Express.js, TypeScript
 - **Database**: MongoDB
 - **API**: [The Movie Database (TMDb) API](https://www.themoviedb.org/documentation/api)
 
