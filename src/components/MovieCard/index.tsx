@@ -5,7 +5,7 @@ import StarRatting from "../StarRatting";
 export interface Props {
   movie: Movie;
 }
- 
+
 export default function MovieCard(props: Props) {
   const movie = props.movie;
   return (
@@ -20,9 +20,16 @@ export default function MovieCard(props: Props) {
         <h2 className="movie-title">{movie.title}</h2>
         <StarRatting rating={movie.vote_average} />
         <div className="hidden-content">
-          <p className="description">{movie.overview}</p>
+          <p className="description">
+            {movie.overview
+              ? movie.overview.length > 100
+                ? `${movie.overview.substring(0, 100)}...`
+                : movie.overview
+              : "Descrição não disponível"}
+          </p>
+
+          <button className="btn-default">Ver mais</button>
         </div>
-        <button className="btn-default">Ver mais</button>
       </div>
     </li>
   );

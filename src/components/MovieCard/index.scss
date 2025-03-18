@@ -24,6 +24,7 @@
     .movie-title {
       font-size: 16px;
       color: #fff;
+      margin-bottom: 8px;
     }
 
     .hidden-content {
@@ -33,7 +34,19 @@
       max-height: 0;
       opacity: 0;
       overflow: hidden;
-      transition: max-height 0.6s ease, opacity 0.6s ease;
+      transition: max-height 1s ease, opacity 1s ease;
+
+      .btn-default{
+        background-color: #6046ff;
+        padding:  6px 8px;
+        border-radius: 4px;
+        margin-top: 10px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+
+      }
     }
   }
 
@@ -44,7 +57,7 @@
     }
 
     .hidden-content {
-      height: 100px;
+      max-height: 250px; /* Alterado de height para max-height */
       opacity: 1;
     }
   }

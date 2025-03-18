@@ -5,16 +5,17 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Movie } from "@/types/movie";
 import MovieCard from "../MovieCard";
+import ReactLoading from "react-loading";
 
 export default function MovieList() {
   const [movies, setMovies] = useState<Movie[]>([]);
-
+  const [loading, setLoading] = useState<boolean>(true);
   useEffect(() => {
     getMovies();
   }, []);
 
   const getMovies = async () => {
-    axios({
+    await axios({
       method: "GET",
       url: "https://api.themoviedb.org/3/discover/movie",
       params: {
@@ -24,7 +25,17 @@ export default function MovieList() {
     }).then((response) => {
       setMovies(response.data.results);
     });
+
+    setLoading(false);
   };
+
+  if (loading) {
+    return (
+      <div className="loading">
+        <ReactLoading type="spin" color="#6046ff" height={"5%"} width={"5%"} />
+      </div>
+    );
+  }
 
   return (
     <ul className="movie-list">
