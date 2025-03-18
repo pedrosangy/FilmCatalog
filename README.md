@@ -16,3 +16,17 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/pedrosangy/FilmCatalog.git
+
+# Technologies Used
+
+Frontend: React.js, HTML5, CSS3
+Backend: Node.js, Express.js
+Database: MongoDB
+API: The Movie Database (TMDb) API
+
+# Acknowledgments
+
+The Movie Database (TMDb) for providing film data.
+React for the robust frontend library.
+Node.js and Express.js for the backend infrastructure.
+MongoDB for the database solutions.
