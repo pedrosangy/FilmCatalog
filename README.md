@@ -4,9 +4,9 @@ FilmCatalog is a web application designed to help users explore and manage a cur
 
 ## Features
 
-- **Search Films**: Quickly find movies by title, genre, or release year.
+
 - **Film Details**: Access comprehensive information about each film, including synopsis, cast, and crew.
-- **User Notes**: Add personal notes or ratings to individual films for future reference.
+
 
 ## Installation
 
