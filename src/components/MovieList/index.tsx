@@ -24,18 +24,13 @@ export default function MovieList() {
       },
     }).then((response) => {
       setMovies(response.data.results);
+      console.log(response.data.results);
     });
 
-    setLoading(false);
+     
   };
 
-  if (loading) {
-    return (
-      <div className="loading">
-        <ReactLoading type="spin" color="#6046ff" height={"5%"} width={"5%"} />
-      </div>
-    );
-  }
+   
 
   return (
     <ul className="movie-list">
